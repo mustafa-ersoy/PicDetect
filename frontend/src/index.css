@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  background : linear-gradient(to right, rgb(188, 122, 189), rgb(136, 191, 198));
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.single-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-list-main{
+  display: flex;
+  justify-content: center;
+}
+.image-list {
+  width: 90%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-container {
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  border: rgb(14, 145, 157) solid 3px;
+  overflow: hidden;
+  background-color: rgb(56, 150, 153);
+}
+
+.image-container-2{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.icons{
+  display: flex;
+  height: 40px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon{
+  font-size: 2rem;
+  color: rgb(143, 64, 154);
+}
+.icon:hover{
+  background-color: #ccc;
+}
+
+
+
+.search-bar {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  height: 200px; /* Adjust the height as needed */
+}
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.search-input {
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.search-button {
+  padding: 15px 25px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #073567;
+}
+
+.upload-success{
+  text-align: center;
+  color: rgb(21, 144, 21);
+  font-size: 2rem;
+}
+.drag-1{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.drag-2{
+  display: flex;
+  justify-content: center;
+}
+
+.drop-zone{
+  min-height: 250px;
+  width: max(40%, 300px);
+  background-color: #aaa;
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.dropped-image-div{
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.dropped-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.drag-button-div{
+  text-align: center;
+  margin: 20px;
+}
+.drag-button{
+  padding: 15px 25px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner {
+  display: inline-block;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #333;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+.account-image-div{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.account-image-container {
+  position: relative;
+  display: inline-block; /* Or use 'block' if you want a block-level container */
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.account-image {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  width: 200px;
+  height: 200px;
+}
+
+.image-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.profile-upload-button{
+  background-color: green;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.account-name{
+  display: flex;
+  justify-content: center;
+}
+
+.table-div{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.striped-table {
+  width: max(40%, 400px);
+  border-collapse: collapse;
+  color: white;
+  font-size: 24px;
+  border-radius: 20px;
+}
+
+.striped-table th, .striped-table td {
+  padding: 8px;
+  text-align: left;
+}
+
+.striped-table th {
+  background-color: #f2f2f2;
+}
+
+.striped-table tr:nth-child(even) {
+  background-color: #333; /* Even rows color */
+}
+
+.striped-table tr:nth-child(odd) {
+  background-color: #666; /* Odd rows color */
+}
+.striped-table td:first-child {
+  text-align: right;
+}
+
+.logout-div{
+  display: flex;
+  justify-content: center;
+}
+.logout-button{
+  background-color: red;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-main{
+  display: flex;
+  justify-content: center;
+}
+.login-field{
+  border-radius: 20px;
+  margin-top: 100px;
+  width: max(30%, 300px);
+  background-color: #a8c2c3;
+  text-align: center;
+}
+.login-logo-div{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.logo{
+  width: max(10%, 150px);
+  object-fit: cover;
+}
+.login-text{
+  margin-top: 40px;
+}
+.form-field{
+  display: flex;
+  justify-content: center;
+}
+.login-input{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  width: max(200px, 20%);
+}
+.login-button{
+  background-color: rgb(13, 144, 210);
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 30px auto;
+}
+
+.login-form{
+  width: max(220px, 20%);
+  text-align: center;
+}
+
+.nav-logo{
+  width: 120px;
+}
+
+
+.container {
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+.footer {
+  margin-top: 20px;
+  background-color: #571951;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

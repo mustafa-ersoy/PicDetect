@@ -1,0 +1,41 @@
+# Ignore node_modules from the frontend (React)
+/frontend/node_modules/
+
+# Ignore build artifacts and compiled code from the frontend (React)
+/frontend/build/
+/frontend/dist/
+/frontend/.next/
+/frontend/.cache/
+/frontend/.idea/
+/frontend/.vscode/
+/frontend/*.log
+
+# Ignore virtual environment from the backend (Django)
+/backend/venv/
+/backend/__pycache__/
+
+# Ignore database files (sqlite, PostgreSQL, etc.)
+/backend/*.db
+/backend/*.sqlite3
+/backend/*.sql
+
+# Ignore .env files that may contain sensitive information
+/*.env
+
+# Ignore any user-specific configuration files
+*.iml
+.DS_Store
+.idea/
+.vscode/
+.env
+
+# Ignore log files
+*.log
+
+# Ignore compiled Python files
+*.pyc
+
+# Ignore compiled JavaScript files
+*.js.map
+
+**/*.icloud
